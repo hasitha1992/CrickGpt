@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: bot start and select format
+  steps:
+    - intent: start_bot
+    - action: utter_start_bot
+    - action: action_format_selection
+    - slot_was_set:
+      - format: "T20"
+
+- story: select format
+  steps:
+  - intent: select_format
+  - action: action_format_selection
+  - slot_was_set:
+    - format: "ODI"
+
+- story: select t20 path
+  steps:
+  - intent: t20_format
+    entities:
+    - format: "t20"
+  - slot_was_set:
+    - format: "T20"
+  - action: utter_confirm_format
+  - action: action_select_tournament_year
+
+- story: select odi path
+  steps:
+  - intent: odi_format
+    entities:
+    - format: "odi"
+  - slot_was_set:
+    - format: "ODI"
+  - action: utter_confirm_format
+  - action: action_select_tournament_year
+
+- story: fallback cricket format
+  steps:
+  - action: action_format_fallback
+  - action: action_format_selection
+
+
+- story: select tournament year
+  steps:
+  - intent: select_tournament_year
+    entities:
+    - tournament_year: "2014"
+  - slot_was_set:
+      - tournament_year: "2014"
+  - action: utter_confirm_tournament_year
+
+
+
+
+
+
+
+
+
+
+
+

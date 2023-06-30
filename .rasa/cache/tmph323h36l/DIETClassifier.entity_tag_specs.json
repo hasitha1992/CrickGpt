@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-format",
+      "2": "I-format",
+      "3": "L-format",
+      "4": "U-format",
+      "5": "B-player_of_the_series",
+      "6": "I-player_of_the_series",
+      "7": "L-player_of_the_series",
+      "8": "U-player_of_the_series",
+      "9": "B-tournament",
+      "10": "I-tournament",
+      "11": "L-tournament",
+      "12": "U-tournament",
+      "13": "B-tournament_year",
+      "14": "I-tournament_year",
+      "15": "L-tournament_year",
+      "16": "U-tournament_year",
+      "17": "B-username",
+      "18": "I-username",
+      "19": "L-username",
+      "20": "U-username",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-format": 1,
+      "I-format": 2,
+      "L-format": 3,
+      "U-format": 4,
+      "B-player_of_the_series": 5,
+      "I-player_of_the_series": 6,
+      "L-player_of_the_series": 7,
+      "U-player_of_the_series": 8,
+      "B-tournament": 9,
+      "I-tournament": 10,
+      "L-tournament": 11,
+      "U-tournament": 12,
+      "B-tournament_year": 13,
+      "I-tournament_year": 14,
+      "L-tournament_year": 15,
+      "U-tournament_year": 16,
+      "B-username": 17,
+      "I-username": 18,
+      "L-username": 19,
+      "U-username": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

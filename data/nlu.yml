@@ -1,0 +1,404 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - morning
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: start_bot
+  examples: |
+    - start
+    - i want start the convercation
+
+- intent: re_start_bot
+  examples: |
+    - restart
+    - reset
+    - i want to reset the chat
+    - i want restart the convercation
+    - go to starting point
+    - clear the conversation
+
+- intent: change_format
+  examples: |
+    - change the format
+    - i want details about [T20](format)
+    - go to format selection
+    - format selection
+    - back to format
+    - back to format selection
+
+- intent: change_year
+  examples: |
+    - i want details about [2020](tournament_year) series
+    - i want to change the selected year to [2014](tournament_year)
+    - change the year
+    - go to year selection
+    - year selection
+    - back to year
+    - back to year selection
+
+- intent: provide_name
+  examples: |
+    - My name is [John](username)
+    - You can call me [Sarah](username)
+    - Name: [Michael](username)
+    - hey dude, my name is [hiruni](username)
+    - good morning , i'm [yumal](username)
+    - hi, its [chathuranga](username)
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: get_tournament_list
+  examples: |
+    - what are the tournaments you can support?
+    - can i have the list of tournaments?
+    - can i have the all tournaments that you have?
+    - which tournaments you have?
+    - what are the tournaments you have?
+
+- intent: get_team_list
+  examples: |
+    - what are the teams ?
+    - can i have the list of teams plays cricket?
+    - can i have the all nations who participated ?
+    - list of teams that plays international cricket
+    - which teams participated?
+    - teams list?
+    - Can you provide me with a list of teams participating ?
+    - What are the teams competing this tournament?
+    - Give me the names of the teams involved .
+    - Can you list the participating teams in the series?
+    - Which teams are taking part of the series?
+    - Can you give me the team list ?
+    - Tell me the names of the teams playing cricket.
+    - Which teams are in contention for the world cup?
+
+- intent: select_format
+  examples: |
+    - which formats do you provide ?
+    - what are the formats?
+    - what kind of formats available?
+
+- intent: odi_format
+  examples: |
+    - i want details about [ODI](format) world cups
+    - i want [ODI](format) details
+    - i select [ODI](format)
+    - i need [ODI](format) format
+    - can i select [ODI](format) format?
+
+- intent: t20_format
+  examples: |
+    - i want details about [T20](format) world cups
+    - i want [T20](format) details
+    - i select [T20](format)
+    - i need [T20](format) format
+    - can i select [T20](format) format?
+
+- intent: select_tournament_year
+  examples: |
+    - i select [2000](tournament_year)
+    - i want [2014](tournament_year) world cup details
+    - i'm looking for [2021](tournament_year) world cup details
+
+- intent: get_tournament_result
+  examples: |
+    - winner?
+    - who is the winner ?
+    - who wins the cup?
+    - can you give me the winner ?
+    - which team wins the world cup?
+    - champion ?
+    - champion of the tournament ?
+    - What were the results of the tournament?
+    - Can you provide the outcomes of the tournament?
+    - Who were the winners ?
+    - Give me the results, including the winning team.
+    - Who emerged as the champions ?
+    - Which team claimed victory ?
+    - What was the overall outcome of the tournament ?
+
+- intent: get_tournament_runnerup
+  examples: |
+    - who is the runner up?
+    - can you give me the 2nd place ?
+    - which team loss the final?
+    - runner up ?
+    - i want 2nd place of the tournament ?
+    - Which team was the runner-up in this tournament?
+    - Can you tell me the team that finished as the runner-up ?
+    - Who was the second-place team ?
+    - Which team reached the finals but came in second ?
+    - Give me the name of the team that was the runner-up .
+    - Who was the losing finalist in the tournament?
+    - Which team secured the second position ?
+    - Tell me the team that consistently performed well but ended up as the runner-up .
+    - Who stands out as the team that reached the finals but came in second in terms of tournament performances?
+
+- intent: get_tournament_host
+  examples: |
+    - Where was the [2015](tournament_year) [t20](format) world cup held?
+    - which country held the [2000](tournament_year) [odi](format) cup?
+    - which country host the [2000](tournament_year) [t20](format) world cup tournament?
+    - where is [2000](tournament_year) [t20](format) cup held ?
+    - where is the venue of [2000](tournament_year) [t20](format) cup ?
+    - Which country hosted this tournament?
+    - Can you tell me the host nation of the tournament?
+    - location of this tournament ?
+    - Which country organized this ?
+    - Give me the name of the hosting nations.
+    - Which country was responsible for organizing ?
+    - Tell me the country that served as the host.
+    - Who was in charge of hosting the tournament in terms of location?
+
+- intent: get_player_of_the_series
+  examples: |
+    - I'm curious, who was the [standout player](player_of_the_series) in [2021](tournament_year) [T20](format) cup?
+    - who is the [player of the series](player_of_the_series) of [first](tournament_year) icc [ODI](format) world cup ?
+    - who is the [best player of the series](player_of_the_series) of [last](tournament_year) [ODI](format) world cup?
+    - [best player](player_of_the_series) of [last](tournament_year) [T20](format) world cup?
+    - [best player](player_of_the_series) of [first](tournament_year) [T20](format) cup?
+    - Who was awarded the Player of the Series ?
+    - Can you tell me the player who received the Player of the Series award this tournament?
+    - Who is the standout player ?
+    - Which player was recognized as the best performer of the series ?
+    - Give me the name of the player who was awarded the Player of the Series .
+    - Who is the most valuable player in terms of overall performance ?
+    - Which player was honored with the Player of the Series award ?
+    - Can you provide the player who received the highest accolade as Player of the Series ?
+    - Tell me the player who consistently impressed and was recognized as the best throughout the series.
+    - Who stands out as the top performer and received the Player of the Series award in terms of tournament performances?
+
+
+- intent: get_tournament_most_run_player
+  examples: |
+    - best batsman ?
+    - most runs ?
+    - who taken the most runs of [last](tournament_year) [odi](format) cup?
+    - who is the best batsman of 2019(tournament_year) [t20](format) world cup?
+    - most runs getting player of 2014(tournament_year) [t20](format) world cup?
+    - most runs scored batsman of 2014(tournament_year) [t20](format) tournament?
+    - Who was the player with the highest runs ?
+    - Can you tell me the player who scored the most runs in the tournament?
+    - Who is the leading run-scorer ?
+    - Which player holds the record for the most runs in the tournament?
+    - Give me the name of the player with the highest run count in a cricket tournament.
+    - Who is the top batsman in terms of runs scored?
+    - Which player has the maximum number of runs ?
+    - Can you provide the player with the most runs this cup?
+    - Tell me the player who consistently performed as the highest run-scorer in this tournament.
+    - Who stands out as the player with the most runs in terms of tournament performances?
+
+- intent: get_tournament_most_wicket_getting_player
+  examples: |
+    - most wickets ?
+    - best bowler ?
+    - who taken the most wickets of [last](tournament_year) [odi](format) cup?
+    - who is the best bowler of 2019(tournament_year) [t20](format) world cup?
+    - most wicket getting player of 2014(tournament_year) [t20](format) world cup?
+    - most wicket taken bowler of 2014(tournament_year) [t20](format) tournament?
+    - Who was the player with the most wickets ?
+    - Can you tell me the player who took the highest number of wickets?
+    - Who is the leading wicket-taker?
+    - Which player holds the record for the most wickets in this tournament?
+    - Give me the name of the player with the highest wicket count.
+    - Who is the top bowler in terms of wickets taken in this tournament?
+    - Which player has the maximum number of wickets in this cup?
+    - Can you provide the player with the most wickets ?
+    - Who stands out as the player with the most wickets in terms of tournament performances?
+
+
+
+- intent: get_most_tournament_winners
+  examples: |
+    - who wins the most titals?
+    - who is the most dominant team?
+    - which team wins the most tournaments?
+    - most winning team?
+    - most cups?
+    - who's win the world cup most of the times?
+    - which contry won the cup most times?
+    - Which team has won the most cricket tournaments?
+    - Can you tell me the team with the highest number of tournament wins?
+    - Who is the most successful winner ?
+    - Which team holds the record for winning the most tournaments?
+    - Give me the team that has won the highest number of cricket tournaments.
+    - Who is the dominant team in terms of tournament victories?
+    - Which team has clinched the maximum number of tournament titles?
+    - Can you provide the top team with the most tournament wins in cricket?
+    - Tell me the team that has been consistently successful in winning tournaments.
+    - Which team stands out as the most accomplished in terms of tournament wins?
+
+- intent: get_tournament_win_count_of_a_team
+  examples: |
+    - How many World Cup wins does [team] have?
+    - How many times has [team] won the World Cup?
+    - Can you tell me the number of World Cup victories for [team]?
+    - What is the total count of World Cup wins for [team]?
+    - How successful has [team] been in the World Cup?
+    - Which team has won the most World Cups?
+    - Is [team] the record holder for World Cup wins?
+    - How many World Cups has [team] clinched?
+    - Give me the historical World Cup wins for [team].
+    - Provide me with the number of World Cup trophies won by [team].
+
+- intent: nlu_fallback
+  examples: |
+    - Sorry, I didn't get that.
+    - Can you rephrase that?
+    - I'm not sure what you mean.
+
+- synonym: teams
+  examples: |
+    - nations
+    - Squad
+
+entity_synonyms:
+- synonym: ODI
+  examples: |
+    - odi world cup
+    - world cup
+    - odi cup
+    - world cup odi
+    - one day world cup
+    - limited over world cup
+    - 50 over world cup
+    - icc cricket world cup
+
+
+- synonym: T20
+  examples: |
+    - t20 world cup
+    - t20 cup
+    - world cup t20
+    - twenty twenty cup
+    - twenty twenty world cup
+    - 20 20 world cup
+
+- synonym: player of the series
+  examples: |
+    - standout player in series
+    - series best player
+    - man of the series
+
+- synonym: player of the match
+  examples: |
+    - mom
+    - man of the match
+    - standout player in the match
+
+- synonym: srilanka
+  examples: |
+    - srilankans
+    - lankans
+    - sri lanka
+    - lions
+
+- synonym: australia
+  examples: |
+    - kangaroos
+    - team australia
+
+- synonym: bangladesh
+  examples: |
+    - team bangladesh
+    - the tigers
+    - tigers
+- synonym: england
+  examples: |
+    - england team
+    - poms
+- synonym: india
+  examples: |
+    - indians
+    - men in blue
+    - the blues
+- synonym: newzealand
+  examples: |
+    - kiwis
+    - black caps
+- synonym: southafrica
+  examples: |
+    - southafrica
+    - proteas
+- synonym: westindies
+  examples: |
+    - the windies

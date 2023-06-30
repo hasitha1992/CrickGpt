@@ -1,0 +1,30 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODUnNbkkPi2/KDexpLY2FgDUDx7W": "utter_select_format",
+    "eJyFjUsKwCAMBa+SA0ixW69SRERSEPwUE7sR715BN125CW8ek+RqXUB7Cr7GOvY5KWgzmGQjKlgQPDGm4VbCMhyfBrICwoCOzZ1LtNw3tyozFvNfEUAhMw11Fgqu85AC5Bp6+1N/ZEpIOw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPbUkviS/tAikOK8ErKy2NhYAlrkhdQ==": "action_show_tournament_list",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPbUkviS/tAikOK8ErKyWOBOLM/LLMbQSZ34sACjbRzI=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCctPyi3MSS+LTEnJykxOTs2tpYAJGuFq4=": "utter_select_format",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCctPyi3MSS+LTEnJykxOTsWgK6SktKUovii1NzUpNLoHpra2MBDn8qsQ==": "action_listen",
+    "eJxljF0KAjEMhK+SAyyir71KWUqRIIFuKs1UkNK7G3VhBd/m55uJYy407o0fKV8hVQONr0iaNw60myIGVmetVJhDqL29CUWgeDmd14WOKD05tz33TTd2N7wQCPs6HujfzI9E8fm9MdJP29h6wZzrC+tdRBw=": "action_show_tournament_result",
+    "eJzNj9EKwjAMRX8lHzDEvfZXyihlBA3UVJp0Q8r+3aiDDeaDj77l5p57SXxbOmj3glOIo1JmB+0zBI43dLCKRKLIxkrKKgZpruVFsDrw/ek8dLCtwgNjWfeWqYKmmhmkhJb2G3qIWRGxvnsvqGHnFpSadPntYLnm+Uv4Lx4Ynt2+jWM=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "utter_select_format",
+    "eJyljUEKgDAMBL+SB4jotV8RKUVWKdRWkuil+Hcr9SoevCzZMMwO+Wwob4zDukl9ioZyPWx0Kww9JXhRxMLuAi6Mj6WqoYUBPT8cuyrYVvSPQRAwqZ0Tr+42SUgqBa0PQ0Pfdg11T4yvW+MFy6xaqw==": "action_listen",
+    "eJwtzFEKgCAMBuCr7AAS1qNXERGJBQOboasX8e4t7GX8+/k234eBflV8YtqFCjvoM0ROJzr4l0xNkNW2XKQpOko9kzjwdrEG1m9oCiruhlUBspAQqvXTBgPE+kSPZLNxlmOEFxMBLik=": "utter_confirm_format",
+    "eJy1jkEKwzAMBL+iB5ji9OivGGNMUEAQy0VWcjH5e1WcnnvqRazE7K7iuByMl+CZy6rUOMCYInOpGOBeduqKbGzfm3aDtia1aIDoH97B8hmmkhFHRzEAWUkJjY2TTQ6ILcRM+vR5Hq8f9YcqSl4bbyT16/nDF+kN8ftdng==": "action_select_tournament_year",
+    "eJy9jkEKAyEMRa/iAaTYLr2KiIhkQNBYYiwUmbs3gzPrrtpN+P/zfhI3d63mk+AVYuLc0Kq5RMBYwarTlNwZUNheGneBtkY1slXO3IxW92OI8kKMDiQAIGfOIKxbrNcqoyyREj9MWOH+5fxgBgqp4ZapXp2/f3GaDgUSB26Djhw5vCHSL97xH+oEkMM=": "action_listen",
+    "eJxdzEEKgDAMBMCv5AEieu1XSilFcgjUVJooSOnfjeipt112WN/6BO2oeMW0KRV20L4QOe3o4C+ZRJHNSi4qhrSc9RWs8cZUHfh1XoKBU9Bas4GU0KgfaJiA2M7UgWDGTeMAeg8P7sY5mw==": "utter_confirm_tournament_year",
+    "eJy9zkEKAzEIBdCreIChTLe5SggSggUhY4ZoCiXM3WtpV9NFd9358Sk/zmOBuXe6Yy7GTQLM94CSNwrwCZXVSNxqbaaOrI3+EmL4oNwDxOtlTQ6GkqfpCzYmp/FE0wIs/swCKFUqhidw/Kg0zKhjaXLjvn0d/6liegKabHhW": "action_listen",
+    "eJwtzMEJwCAMBdBVMoAUe3UVEZE2hYDGomkv4u4N2EvID+/Hj2lg3A3fmA6hyg7GWiKngg7+kKkLstqeq3RFV20liQO/b9aA/UdQ8XRsCpCFhFCtXzYYINYnWqonxXWcM3wXkC6P": "utter_confirm_format",
+    "eJy1zs0KwzAIAOBX8QHC6K55lRBC6CwIjQ5jdwl99wlpzzvtIiqfP2mcAcZb8VPqaiQcYcykcG0Y4Sp26obstu9i3dEm2qpFSM/HEmC5QnZxdFQHyEZG6DZNmwMQ+xIfkheV2Tx/nD/MUMsqvJG2e+YPX+QvMIxeag==": "action_select_tournament_year",
+    "eJy9jkEKAyEMRa/iAaRMt15lEBGbgYDGEmOhyNy9Kdp1V+0m5H/eT/4+TmvGneERYhKs5MyYS6BYwJklMjYBUrblKk2ho3KJ4sx+vWzWbGt4JXoDVgBIUBCU3SfrrUHSIxqqNwzTPL+87yLAIVU6kMsn8/cWSzTIkCRI7fz2ScITIv+ijn8BnxiR9Q==": "action_listen",
+    "eJxljdEKwyAMRX8lHyCje/VXRIKMdBOsFk0HRfz33WLf9hJyyT0nrg9Dfa/y5fDSWLKlPhfOYRNLd0ixqWR0WyraUFpL3YJacs/HYmi5hzek5agXmpVPCXU2PMijCVLHIWoUONx0/CGQxIxvsL9FeU/hlMplZf0IQwJ4DP8DKZBDSA==": "action_show_player_of_the_series",
+    "eJzNj0EKwyAQRa8yB5CSbL2KyCBl0gjGCTpJCZK7d4rZtYsuuxE//vdmdO000NZCO4a7RM4WWr9gDgtZuEKKVShrtyaWqqWJyxLEghtvg4HhOrwB4a280Sx4UCi94ZXcKmlq+hAlkjpcd3wgKolZp6n9QYJrCgcV5AllJlSJwudvW9eZn9/5//mIfwG++oy7": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPbUkviQ1MResoLY2FgDTgx7P": "action_show_team_list",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohPbUkviQ1MResoJY4s4oz8suRNBEyMxYAP40/QA==": "action_listen",
+    "eJxtjEEKAjEMRa+SAwyi216lDKEMQQOdVJpUkNK7G+ssBN3l//z3Yh8L9HulB6bNuEiA/jlQ0k4BjpBZjcS3moupj/Zk2y1AvJzO6wJWWn3vxf5U+KRUj94NTclT9wcbk7vidH0TP7T7WGzqr2Q4AaykLdsY6wugJ0gv": "action_show_match_result",
+    "eJzNj8EKAjEMRH8lH7CIXvsrZQllCW6g20qTKlL2383WPSh68OgtM5l5ML6tA7RLoSuGSTknB+15YAoLOdhFZFFKlpWYVSy0BJ1mB/50OI4DaK5lyyf9YuGdQtl9I1QhU80erEzG8p312vhoG4+TdvyZFHsBC0mNuv42QOZ8e+/95ZbxAQMNk0k=": "action_listen"
+  }
+}

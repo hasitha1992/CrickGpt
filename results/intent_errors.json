@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Sorry, I didn't get that.",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "provide_name",
+      "confidence": 0.00014147271576803178
+    }
+  },
+  {
+    "text": "Can you rephrase that?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "provide_name",
+      "confidence": 0.00017473989282734692
+    }
+  },
+  {
+    "text": "I'm not sure what you mean.",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "provide_name",
+      "confidence": 6.793021020712331e-05
+    }
+  }
+]

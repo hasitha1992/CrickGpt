@@ -1,0 +1,180 @@
+version: '3.1'
+
+intents:
+- re_start_bot
+- start_bot
+- affirm
+- bot_challenge
+- deny
+- provide_name
+- t20_format
+- odi_format
+- get_match_date
+- get_match_participants
+- get_match_result
+- get_match_scorecard
+- get_match_venue
+- get_match_winners
+- get_player_of_the_match
+- get_player_of_the_series
+- get_tournament_fixtures
+- get_tournament_format
+- get_tournament_list
+- get_tournament_most_catches_player
+- get_tournament_most_run_player
+- get_tournament_most_wicket_getting_player
+- get_tournament_participants
+- get_tournament_result
+- get_tournament_teams
+- get_tournament_host
+- get_team_list
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- select_format
+- select_tournament_year
+- change_format
+- change_year
+- get_tournament_runnerup
+
+
+entities:
+- username
+- tournament
+- match
+- match_date
+- team
+- player_of_the_series
+- player_of_the_match
+- tournament_year
+- match_scorecard
+- match_venue
+- tournament_venue
+- most_wicket
+- most_runs
+- group
+- format
+
+slots:
+  username:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: username
+
+  tournament:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tournament
+  team:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: team
+  player_of_the_series:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: player_of_the_series
+  tournament_year:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tournament_year
+  tournament_venue:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: tournament_venue
+  most_wicket:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: most_wicket
+  most_runs:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: most_runs
+
+  format:
+    type: categorical
+    values:
+      - ODI
+      - T20
+    mappings:
+    - type: from_entity
+      entity: format
+
+responses:
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase? Or you can type 'start' to go to the starting point
+  utter_start_bot:
+  - text: Hey ! Welcome to the cricket world cup history Q-A Bot
+  - text: Hi How are you. I'm a cricket world cup history Q-A Bot
+  - text: Hello there . if you want details about cricket world cup history. You are in correct place
+  utter_greet:
+  - text: Hey !
+  - text: Hi How are you.
+  - text: Hello there :)
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: It was nice to talking to you, Goodbye!
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  
+  
+  utter_confirm_format:
+  - text: you have selected {format} format. so ask any question related to {format} world cup history?
+  utter_confirm_tournament_year:
+  - text: Now you can ask details about {tournament_year} {format} world cup.
+  utter_ask_name:
+  - text: "What's your name?"
+
+
+actions:
+- action_restart
+- utter_greet
+- utter_start_bot
+- action_format_fallback  #fall back when format not setted
+- action_show_tournament_list
+- action_show_team_list
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_ask_tournament
+- utter_ask_tournament_year
+- utter_ask_teams
+- utter_ask_group
+- utter_ask_name
+- action_show_tournament_result
+- action_show_match_result
+- action_select_format
+- utter_confirm_format
+- action_select_tournament_year
+- utter_confirm_tournament_year
+- action_show_player_of_the_series
+- action_show_tournament_most_run_player
+- action_show_tournament_most_wicket_player
+- action_show_host_of_the_series
+- action_show_tournament_runnerup
+- action_format_selection
+
+templates:
+  utter_greet_with_name:
+    - text: "Hello, {username}! How can I assist you?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

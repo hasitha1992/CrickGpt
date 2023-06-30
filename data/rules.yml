@@ -1,0 +1,84 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: select format anytime the user ask to change format
+  steps:
+  - intent: change_format
+  - action: action_format_selection
+
+- rule: select year anytime the user ask to change year
+  steps:
+  - intent: change_year
+  - action: action_select_tournament_year
+
+- rule: restart the bot
+  steps:
+  - intent: re_start_bot
+  - action: action_restart
+
+- rule: ask host of the series
+  steps:
+  - intent: get_tournament_host
+  - action: action_show_host_of_the_series
+
+- rule: ask most wicket taker of the series
+  steps:
+  - intent: get_tournament_most_wicket_getting_player
+  - action: action_show_tournament_most_wicket_player
+
+- rule: ask most runs scorer of the series
+  steps:
+  - intent: get_tournament_most_run_player
+  - action: action_show_tournament_most_run_player
+
+- rule: ask player of the series
+  steps:
+  - intent: get_player_of_the_series
+  - action: action_show_player_of_the_series
+
+- rule: ask tournament result
+  steps:
+  - intent: get_tournament_result
+  - action: action_show_tournament_result
+
+- rule: ask team list
+  steps:
+  - intent: get_team_list
+  - action: action_show_team_list
+
+- rule: ask tournament list
+  steps:
+  - intent: get_tournament_list
+  - action: action_show_tournament_list
+
+- rule: ask runner up
+  steps:
+  - intent: get_tournament_runnerup
+  - action: action_show_tournament_runnerup
+
+# - rule: ask most tournaments winning team
+#   steps:
+#   - intent: get_most_tournament_winners
+#   - action: 
+
+# - rule: ask how many wins to a specific team
+#   steps:
+#   - intent: 
+#   - action: 
+
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase

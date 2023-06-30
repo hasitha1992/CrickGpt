@@ -1,0 +1,202 @@
+[
+  {
+    "text": "I'm curious, who was the standout player in 2021 T20 cup?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 40,
+        "value": "standout player",
+        "entity": "player_of_the_series"
+      },
+      {
+        "start": 44,
+        "end": 48,
+        "value": "2021",
+        "entity": "tournament_year"
+      },
+      {
+        "start": 49,
+        "end": 52,
+        "value": "T20",
+        "entity": "format"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "player_of_the_series",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.8886820077896118,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "player_of_the_series",
+        "start": 25,
+        "end": 40,
+        "confidence_entity": 0.9300719499588013,
+        "value": "standout player",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tournament_year",
+        "start": 44,
+        "end": 48,
+        "confidence_entity": 0.9995679259300232,
+        "value": "2021",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "format",
+        "start": 49,
+        "end": 52,
+        "confidence_entity": 0.9996349811553955,
+        "value": "T20",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who is the best player of the series of last ODI world cup?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 36,
+        "value": "best player of the series",
+        "entity": "player_of_the_series"
+      },
+      {
+        "start": 40,
+        "end": 44,
+        "value": "last",
+        "entity": "tournament_year"
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "value": "ODI",
+        "entity": "format"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "player_of_the_series",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.7796573042869568,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "player_of_the_series",
+        "start": 11,
+        "end": 36,
+        "confidence_entity": 0.966846764087677,
+        "value": "best player of the series",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tournament_year",
+        "start": 40,
+        "end": 44,
+        "confidence_entity": 0.9989100694656372,
+        "value": "last",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "format",
+        "start": 45,
+        "end": 48,
+        "confidence_entity": 0.9996308088302612,
+        "value": "ODI",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who taken the most runs of last odi cup?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 31,
+        "value": "last",
+        "entity": "tournament_year"
+      },
+      {
+        "start": 32,
+        "end": 35,
+        "value": "odi",
+        "entity": "format"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "player_of_the_series",
+        "start": 24,
+        "end": 26,
+        "confidence_entity": 0.8453730344772339,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tournament_year",
+        "start": 27,
+        "end": 31,
+        "confidence_entity": 0.9984719157218933,
+        "value": "last",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "format",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.9996106028556824,
+        "value": "odi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who taken the most wickets of last odi cup?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 34,
+        "value": "last",
+        "entity": "tournament_year"
+      },
+      {
+        "start": 35,
+        "end": 38,
+        "value": "odi",
+        "entity": "format"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "player_of_the_series",
+        "start": 27,
+        "end": 29,
+        "confidence_entity": 0.759230375289917,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tournament_year",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.9982965588569641,
+        "value": "last",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "format",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9995890259742737,
+        "value": "odi",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
